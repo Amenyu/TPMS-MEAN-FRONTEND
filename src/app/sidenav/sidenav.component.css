@@ -1,0 +1,75 @@
+/* :host {
+    .mat-icon {
+      vertical-align: middle;
+      margin-right: 1rem;
+    }
+  } */
+  .logo{
+    text-align: center;
+    padding: 2.6rem 1rem;
+    /* img
+    {
+      width: 200px;
+    } */
+  }
+  .logo img{
+    width: 200px;
+  }
+
+
+  .mat-icon {
+    vertical-align: middle;
+    margin-right: 1rem;
+  }
+  .mat-divider {
+    border-top-width: 2px;
+    border-color: white;
+  }
+  .mat-list-item {
+    color: black !important;
+    font-size: 0.8rem;
+    height: 44px !important;
+    margin-bottom: 4px;
+  }
+      .mat-list-item-content {
+        border-radius: 5px;
+        margin: 0 8px;
+      }
+      .mat-list-item-content:hover {
+          background:blue !important;
+        }
+     
+     
+   .list-item-active {
+     background: #f2f5f7 !important;
+     border-radius: 0 2rem 2rem 0;
+     color: black !important;
+   }
+    .list-item-active:hover {
+       background: blue;
+     } 
+  
+   
+    
+      .mat-list-item-content {
+        background: #2c3344 !important;
+      }
+      .mat-list-item-content:hover {
+          background: #2c3344 !important;
+        } 
+    
+  
+  .mat-subheader {
+    color: #818cf8;
+    font-size: 0.6rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+  } 
+  mat-nav-list
+  {
+    /* Created with https://www.css-gradient.com */
+background: #49A6C3;
+background: -webkit-linear-gradient(bottom, #49A6C3, #FFFFFF);
+background: -moz-linear-gradient(bottom, #49A6C3, #FFFFFF);
+background: linear-gradient(to top, #49A6C3, #FFFFFF);
+  } 

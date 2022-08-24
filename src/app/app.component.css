@@ -1,0 +1,22 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  mat-drawer {
+    width: 260px;
+  }
+  mat-drawer-container {
+    height: 100%;
+  }
+  
+  mat-drawer {
+   /* Created with https://www.css-gradient.com */
+/* Created with https://www.css-gradient.com */
+/* Created with https://www.css-gradient.com */
+background: #49A6C3;
+background: -webkit-linear-gradient(top, #49A6C3, #49A7C3);
+background: -moz-linear-gradient(top, #49A6C3, #49A7C3);
+background: linear-gradient(to bottom, #49A6C3, #49A7C3);
+  }
