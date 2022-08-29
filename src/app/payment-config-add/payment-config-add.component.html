@@ -1,0 +1,61 @@
+<div class="container-fluid page">
+    <div class="d-flex page__box p-3 mt-2"> New Payment Configuration</div>
+    <div class="page__content shadow p-3 position-relative">
+
+<div class='card'>
+    <form (ngSubmit) ="addConfig()" action=""></form>
+    <div class='card-body'>
+        <div class='table-responsive'>
+            <table class='table'>
+                <tbody>
+                    <tr>
+                        <td><label for="prodName">Trainer Type</label></td>
+                        <td><select name="t_type" class="dropdown" id="t_type" [(ngModel)]= "configItem.trainerType">
+                            <option value="">Select Trainer Type</option>
+                            <option value="Empanelled">Empanelled</option>
+                            <option value="Expert">Expert</option>
+                            <option value="Corporate">Corporate</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="prodCode">Training Mode</label></td>
+                        <td><select class="dropdown"  name="t_mode" id="t_mode" [(ngModel)]= "configItem.trainingMode">
+                            <option value="">Select Train Mode</option>
+                            <option value="Physical">Physical</option>
+                            <option value="Virtual">Virtual</option>
+                            <option value="Hybrid">Hybrid</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="prodName">Is Extra Activity Included</label></td>
+                        <td><select class="dropdown"  name="t_extra" id="t_extra" [(ngModel)]= "configItem.isExtraActivity" >
+                            <option value="No">No</option>
+                            <option value="Yes">Yes</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="prodName">No. of Students</label></td>
+                        <td><input type="text" name="t_no_of_std" id="t_no_of_std" [(ngModel)]= "configItem.noOfStudents"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="prodName">Payment</label></td>
+                        <td><input type="text" name="t_payment" id="t_payment" [(ngModel)]= "configItem.paymentAmt"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" (click)= "addConfig()" class="btn btn-primary" name="btn" id="btn" value="Submit"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+
+<ngx-spinner bdColor="rgba(51, 51, 51, 0.8)" size="default" type="ball-spin-clockwise">  
+    <p style="color: white">Please Wait. </p>  
+    </ngx-spinner>    

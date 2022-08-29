@@ -1,0 +1,29 @@
+.page {
+    color: white;
+    padding: 0 1rem;
+    background: #f1f5f9;
+}
+    .page__box {
+      min-height: 120px;
+      background: #49A6C3;
+background: -webkit-linear-gradient(top, #49A6C3, #FFFFFF);
+background: -moz-linear-gradient(top, #49A6C3, #FFFFFF);
+background: linear-gradient(to bottom, #49A6C3, #FFFFFF);
+      margin: 0 -1rem;
+      font-size: 36px;
+    }
+    .page__content {
+      min-height: calc(100vh - 178px);
+      border-radius: 10px;
+      margin-top: -2rem;
+      background: white;
+      color: black;
+      font-size: 1rem;
+    }
+      .page__content-data {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    
+  

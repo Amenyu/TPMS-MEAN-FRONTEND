@@ -1,0 +1,49 @@
+<div class="container-fluid page">
+    <div class="d-flex page__box p-3 mt-2"> Payment Configurations</div>
+    <div class="page__content shadow p-3 position-relative">
+
+<div class='card'>
+    <div class='card-header'>
+        <input type="submit" (click)= "addConfig()" class="btn btn-primary" name="btn" id="btn" value="Add New">
+    </div>
+    <div class='card-body'>            
+        <div class='table-responsive'>
+          <table class='table'
+                *ngIf = 'paymentConfigs && paymentConfigs.length'>
+                <thead>
+                    <tr>
+                      <th>Trainer Type</th>
+                      <th>Training Mode</th>
+                      <th>Is Extra Activity</th>
+                      <th>No. of Students</th>
+                      <th>Payment Amount</th>
+                      <th>Edit</th>
+                      <th>Delete</th>
+                    </tr>
+                   
+                  </thead>
+
+                  <tbody>  
+                    <tr *ngFor= 'let paymentConf of paymentConfigs'>
+                        <td>{{ paymentConf.trainerType }}</td>
+                        <td>{{ paymentConf.trainingMode }}</td>
+                        <td>{{ paymentConf.isExtraActivity }}</td>
+                        <td>{{ paymentConf.noOfStudents }}</td>
+                        <td>{{ paymentConf.paymentAmt}}</td>
+                        <td>
+                          <button class="btn btn-light" style="cursor:pointer" (click)= "editPaymentConfig(paymentConf)" > <i class="fa-solid fa-pen-to-square"></i></button>
+                        </td>
+                        <td>
+                          <button class="btn btn-light" style="cursor:pointer" (click)= "deletePaymentConfig(paymentConf)"> <i class="fa-regular fa-trash-can"></i></button>
+                        </td>   
+                            
+                         
+                </tr>              
+            </tbody>
+          </table>
+        </div>
+    </div>
+  </div>
+
+</div>
+</div>
